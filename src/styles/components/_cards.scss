@@ -1,0 +1,36 @@
+.highlighted-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 70px;
+  margin-bottom: 48px;
+  width: 100%;
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+  }
+  .highlight {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 0 8px;
+    margin: 0 5px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: $yellow;
+      z-index: -1;
+      animation:fadeInLeft;
+      animation-duration: 1s;
+    }
+  }
+}
+

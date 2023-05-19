@@ -1,0 +1,15 @@
+@import "cards";
+@import "forms";
+@import "modal";
+@import "loader";
+
+.ml-container {
+  @include make-container();
+  max-width: 1260px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(xxl) {
+    padding: 0 32px;
+  }
+}

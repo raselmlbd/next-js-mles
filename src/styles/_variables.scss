@@ -1,0 +1,82 @@
+$yellow: #FFFF00;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                #464A4D;
+
+
+$card-bg: #EFF0F0;
+
+
+$container-1260: 1260px;
+
+// Input controller variables
+
+$input-padding-y:                       25px;
+$input-padding-x:                       18px;
+$input-font-family:                     monumentGrotesk;
+$input-font-size:                       20px;
+$input-font-weight:                     400;
+$input-line-height:                     30px;
+
+$input-bg:                              #656A6D;
+$input-disabled-bg:                     $gray-200;
+$input-disabled-border-color:           null;
+
+$input-color:                           $white;
+$input-focus-color:                     $input-color;
+$input-placeholder-color:               darken($input-color, 35%);
+$input-border-color:                    transparent;
+$input-border-width:                    0;
+$input-box-shadow:                      none;
+
+$input-border-radius:                   0;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-box-shadow:                none;
+
+// Modal controller variables
+
+$modal-inner-padding:               $spacer;
+
+$modal-footer-margin-between:       .5rem;
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+$modal-title-line-height:           $line-height-base;
+
+$modal-content-color:               null;
+$modal-content-bg:                  $white;
+$modal-content-border-color:        transparent;
+$modal-content-border-width:        1px ;
+$modal-content-border-radius:       0;
+$modal-content-inner-border-radius: 0;
+$modal-content-box-shadow-xs:       $box-shadow-sm;
+$modal-content-box-shadow-sm-up:    $box-shadow;
+
+$modal-backdrop-bg:                 $white;
+$modal-backdrop-opacity:            1;
+
+$modal-header-border-color:         var(--#{$prefix}border-color);
+$modal-header-border-width:         0;
+$modal-header-padding-y:            $modal-inner-padding;
+$modal-header-padding-x:            $modal-inner-padding;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+$modal-footer-bg:                   null;
+$modal-footer-border-color:         $modal-header-border-color;
+$modal-footer-border-width:         $modal-header-border-width;
+
+$modal-sm:                          300px;
+$modal-md:                          500px;
+$modal-lg:                          800px;
+$modal-xl:                          1140px;
+
+$modal-fade-transform:              translate(0, -50px);
+$modal-show-transform:              none;
+$modal-transition:                  transform .3s ease-out;
+$modal-scale-transform:             scale(1.02);

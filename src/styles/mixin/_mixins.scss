@@ -1,0 +1,11 @@
+@mixin ml-container {
+  @include make-container();
+  max-width: 1260px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  @include media-breakpoint-down(xxl) {
+    padding: 0 32px;
+  }
+
+}

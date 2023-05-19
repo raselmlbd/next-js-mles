@@ -1,0 +1,31 @@
+%animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+}
+%bg-fade-ltr {
+  @extend %animate;
+  animation-name: fadeInLeftBig;
+  animation-duration: 1.5s;
+}
+
+
+%h-fade-bt {
+  @extend %animate;
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
+
+%p-fade-bt {
+  @extend %animate;
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+}
+
+
+%img-fade-bt {
+  @extend %animate;
+  animation: fadeInUp;
+  animation-duration: 1s;
+}

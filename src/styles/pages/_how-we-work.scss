@@ -1,0 +1,89 @@
+.hero-six {
+  position: relative;
+  margin-top: 92px;
+  margin-bottom: 32px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+  .bg {
+    background: $yellow;
+    position: absolute;
+    height: 473px;
+    width: calc(50% + 255px);
+    top: 60px;
+    left: 32px;
+    z-index: -1;
+    @extend %bg-fade-ltr;
+    animation-duration: 1s;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0 16px;
+    }
+  }
+  .text-section {
+    width: 917px;
+    padding: 138px 52px 57px;
+    margin-top: 60px;
+    @include media-breakpoint-down(lg) {
+      padding: 48px;
+      background: $yellow;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 32px 16px;
+      width: calc(100% - 16px);
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 90px;
+      margin-bottom: 52px;
+      @extend %h-fade-bt;
+      @include media-breakpoint-down(lg) {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 48px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 762px;
+      @extend %p-fade-bt;
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .image-section {
+    width: 540px;
+    margin-left: -290px;
+    z-index: -2;
+    @extend %img-fade-bt;
+    @include media-breakpoint-down(md) {
+      margin-left: -90%;
+      width: 100%;
+      max-width: calc(100% - 10%);
+      img {
+        object-fit: cover;
+        max-height: 480px;
+      }
+    }
+  }
+}

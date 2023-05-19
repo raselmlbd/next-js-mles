@@ -1,0 +1,158 @@
+.hero-two {
+
+  &.career {
+    min-height: 500px;
+    margin-bottom: 48px;
+    .text-section {
+      padding-left: 40px;
+      width: 50%;
+      @include media-breakpoint-down(xxl) {
+        padding-left: 0;
+        padding-right: 32px;
+      }
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 64px;
+        width: 55%;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        padding: 0 32px;
+        margin-bottom: 50px;
+      }
+      h2 {
+        margin-top: 125px;
+        margin-bottom: 60px;
+        @include media-breakpoint-down(lg) {
+          margin-top: 64px;
+          margin-bottom: 48px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 32px;
+          line-height: 1.2;
+        }
+      }
+      p {
+        width: 500px;
+        @include media-breakpoint-down(xxl) {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.locations {
+
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0 32px;
+    }
+  }
+  .info-card {
+    margin-top: 247px;
+    width: calc(50% + 16px);
+    padding: 52px;
+    @include media-breakpoint-down(xxl) {
+      margin-top: 130px;
+      width: calc(50% - 16px);
+      padding: 32px;
+    }
+    @include media-breakpoint-down(xl) {
+      margin-top: 70px;
+      margin-bottom: 85px;
+      width: calc(50% - 16px);
+      padding: 32px 0 0 32px;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      padding: 0 32px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      margin: 0 0 64px;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 48px;
+      @extend %h-fade-bt;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        line-height: 1.2;
+      }
+    }
+    p {
+      margin-bottom: 60px;
+      @extend %p-fade-bt;
+    }
+    .position {
+      @extend %p-fade-bt;
+      .form-group {
+        display: flex;
+      }
+      .select {
+        height: 50px;
+        width: 274px;
+        border: 1px solid rgba(#656A6D, 0.25);
+        padding-right: 48px;
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 10px;
+        appearance: none;
+        background-color: $white;
+        background: url("/images/angle-down.svg") no-repeat calc(100% - 15px) center;
+        @include media-breakpoint-down(md) {
+          width: 220px;
+        }
+        option {
+          color: black;
+          &:hover {
+            background: $yellow;
+          }
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+      .btn-position {
+        background: $yellow;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 10px;
+        width: 160px;
+        border-radius: 0;
+        @include media-breakpoint-down(md) {
+          padding: 10px 8px;
+        }
+      }
+    }
+  }
+
+  .image-section {
+    width: calc(50% - 16px);
+    margin-bottom: -205px;
+    z-index: -1;
+    @extend %img-fade-bt;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      padding: 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 64px;
+    }
+    img {
+      margin-left: auto;
+      max-width: 592px;
+      display: block;
+    }
+  }
+}
