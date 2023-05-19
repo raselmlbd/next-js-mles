@@ -19,12 +19,8 @@ export default function Header() {
             </Link>
           </div>
           <nav className="header-nav">
-            <span className="nav-link nav-drop">
+            <span className={`nav-link ${pathname == '/about-us' ? 'active' : '' }`}>
               <Link href="about-us" className={`dropBtn ${pathname == '/about-us' ? 'active' : ''}`}>About Us</Link>
-              <span className="dropContent">
-                <a className="dropdown-item" href="#">Legacy</a>
-                <a className="dropdown-item" href="#">Meet Our Talents</a>
-              </span>
             </span>
             <span className={`nav-link ${pathname == '/what-we-offer' ? 'active' : '' }`}><Link href="what-we-offer">What We Offer</Link></span>
             <span className={`nav-link ${pathname == '/how-we-work' ? 'active' : '' }`}><Link href="how-we-work">How We Work</Link></span>

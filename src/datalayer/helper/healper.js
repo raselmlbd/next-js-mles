@@ -6,7 +6,7 @@ export const serviceHelper = (data) => {
   // Categorize items by their main category
   let categorizedItems = rawData.reduce((acc, item) => {
     let category = item.selectCategory.catagory || item.selectCategory.mainCategory.catagory;
-    let link = item.selectCategory.link || '';
+    let link = item.selectCategory.link || item.selectCategory.mainCategory?.link || '';
     let sub_category = item.selectCategory.sub_category;
   
     if (!acc[category]) {
@@ -23,18 +23,21 @@ export const serviceHelper = (data) => {
         acc[category].sub_category.push({
           title: sub_category,
           description: item.description,
+          link: link,
           posts: []
         });
       }
       let subCategoryObj = acc[category].sub_category.find(sc => sc.title === sub_category);
       subCategoryObj.posts.push({
         title: item.title,
-        description: item.description
+        description: item.description,
+        link: link,
       });
     } else {
       acc[category].posts.push({
         title: item.title,
-        description: item.description
+        description: item.description,
+        link: link,
       });
     }
   

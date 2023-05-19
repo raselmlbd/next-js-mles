@@ -2,3 +2,4 @@
 node_modules/
 To-Do.js
 Notes.txt
+.env.local
