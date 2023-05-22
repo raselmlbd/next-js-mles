@@ -4,7 +4,8 @@ First, make sure you have `node js` in your machine
 ```bash
 Node JS (v16 or v16 +) requirement
 ```
-Then, run the development server:
+Then, using `yarn` or `npm`
+After that, run the development server:
 
 ```bash
 npm run dev
