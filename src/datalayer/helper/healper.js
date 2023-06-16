@@ -4,7 +4,7 @@ export const serviceHelper = (data) => {
   let refactoredData = [];
   
   // Categorize items by their main category
-  let categorizedItems = rawData.reduce((acc, item) => {
+  let categorizedItems = rawData && rawData.reduce((acc, item) => {
     let category = item.selectCategory.catagory || item.selectCategory.mainCategory.catagory;
     let link = item.selectCategory.link || item.selectCategory.mainCategory?.link || '';
     let sub_category = item.selectCategory.sub_category;

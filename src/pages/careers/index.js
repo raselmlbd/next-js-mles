@@ -6,11 +6,11 @@ import Video from "@/component/Video";
 export default function careers({meetOurPeopleData, herosData, locationData, heroWithLogoData}) {
   return (
     <Layout title="Career">
-      <Video data={meetOurPeopleData} />
+      <Video meetOurPeopleData={meetOurPeopleData} />
 
-      <CareerHero data={herosData} />
+      <CareerHero herosData={herosData} />
 
-      <CareerLocation data={locationData} />
+      <CareerLocation locationData={locationData} />
     </Layout>
   )
 }
